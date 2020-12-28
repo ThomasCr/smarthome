@@ -13,7 +13,7 @@ New Plugins
 -  :doc:`Samsung Smart TV Plugin </plugins/smarttv/README>`: send commands to a SmartTV device.
 -  :doc:`Solarlog Plugin </plugins/solarlog/README>`: to retrieve information from SolarLog devices.
 -  SQLite Plugin: to store the item history in a SQLite database.
--  :doc:`XBMC Plugin </plugins/xbmc/README>`: to control and monitor your XBMC.
+-  `XBMC Plugin </plugins/xbmc/README>`: to control and monitor your XBMC.
 
 Features
 ^^^^^^^^
@@ -34,7 +34,7 @@ Features
    -  DPT 17 support
    -  adding support to log all packets (busmonitor)
 
--  :doc:`Mail Plugin </plugins/mail/README>`: enable sending UTF-8 mails
+-  `Mail Plugin </plugins/mail/README>`: enable sending UTF-8 mails
 -  Visu Plugin:
 
    -  change url

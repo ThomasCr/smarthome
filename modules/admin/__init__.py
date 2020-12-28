@@ -106,6 +106,8 @@ class Admin(Module):
             self.websocket_host = self._parameters['websocket_host']
             self.websocket_port = self._parameters['websocket_port']
             self.log_chunksize = self._parameters['log_chunksize']
+            self.developer_mode = self._parameters['developer_mode']
+            self.click_dropdown_header = self._parameters['click_dropdown_header']
         except:
             self.logger.critical(
                 "Module '{}': Inconsistent module (invalid metadata definition)".format(self._shortname))
@@ -186,7 +188,8 @@ class Admin(Module):
                                self.get_classname(), self.get_instance_name(),
                                description,
                                webifname,
-                               use_global_basic_auth)
+                               use_global_basic_auth
+                               useprefix)
 
 
         :param app: Instance of the application object
@@ -206,7 +209,8 @@ class Admin(Module):
                                      'admin', '',
                                      description='Administrationsoberfläche für SmartHomeNG',
                                      webifname='',
-                                     use_global_basic_auth=False)
+                                     use_global_basic_auth=False,
+                                     useprefix=False)
 
         # Register the web interface as a cherrypy app
         self.mod_http.register_webif(WebApi(self.webif_dir, self, self.shng_url_root, self.api_url_root),
@@ -215,7 +219,8 @@ class Admin(Module):
                                      'api', '',
                                      description='API der Administrationsoberfläche für SmartHomeNG',
                                      webifname='',
-                                     use_global_basic_auth=False)
+                                     use_global_basic_auth=False,
+                                     useprefix=False)
 
         return
 
@@ -353,7 +358,6 @@ class WebInterface(SystemData, ItemData, PluginData):
         PluginData.__init__(self)
 
         return
-
 
 
 class WebApi(RESTResource):

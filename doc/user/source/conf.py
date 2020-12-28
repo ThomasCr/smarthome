@@ -84,7 +84,7 @@ copyright = u'2016-2020 SmartHomeNG Team, SmartHomeNG is based on smarthome.py Â
 #plgrelease = '1.3c dev (as of 13. October 2017)'
 if os.path.isfile(os.getcwd()+'/doc_version.flg'):
     release = '1.4.x'
-    with open(os.getcwd()+'/doc_version.flg') as f:
+    with open(os.getcwd()+'/doc_version.flg', encoding='UTF-8') as f:
         release = f.readline()
     branch = 'master'
     commit = ''
@@ -128,7 +128,8 @@ gettext_compact = True
 # directories to ignore when looking for source files.
 #exclude_patterns = ['plugins/backend_shng_1_3', 'plugins/backend/static', '._*']
 #exclude_patterns = ['plugins/deprecated_plugins', 'plugins/backend_shng_1_3/static', 'plugins/backend/static', '**/._*md']
-exclude_patterns = ['**/._*.rst', '**/priv_*', '**/user_doc_en.rst', 'plugins/deprecated_plugins', 'modules/http/webif/gstatic', 'plugins/blockly/webif/static', '**/_pv_*', '**/pv_*', '**/._*md', '**/developer_doc.*']
+#exclude_patterns = ['**/._*.rst', '**/priv_*', '**/user_doc_en.rst', 'plugins/deprecated_plugins', 'modules/http/webif/gstatic', 'plugins/blockly/webif/static', '**/_pv_*', '**/pv_*', '**/._*md', '**/developer_doc.*']
+exclude_patterns = ['**/._*.rst', '**/priv_*', '**/user_doc_en.rst', 'plugins/deprecated_plugins', 'modules/http/webif/gstatic', 'plugins/blockly/webif/static', '**/_pv_*', '**/pv_*', '**/._*md']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None

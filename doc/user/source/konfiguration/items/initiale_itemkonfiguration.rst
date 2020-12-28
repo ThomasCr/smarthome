@@ -1,3 +1,4 @@
+
 ===========================
 Initiale Item-Konfiguration
 ===========================
@@ -21,8 +22,7 @@ ausgeschaltet werden. Dazu braucht es zwei Schritte:
     .. code-block:: yaml
 
        knx:
-          class_name: KNX
-          class_path: plugins.knx
+          plugin_name: knx
           host: 127.0.0.1
 
 2)  Die Lampe muß nun als **Item** im SmartHomeNG angelegt werden.
@@ -136,8 +136,7 @@ durch folgenden Eintrag aktivieren:
 .. code-block:: yaml
 
    visu:
-       class_name: WebSocket
-       class_path: plugins.visu_websocket
+       plugin_name: visu_websocket
 
 
 Bei den Items ist das Schlüsselwort **visu_acl** zu ergänzen mit der Berechtigungsebene für den Websocket.

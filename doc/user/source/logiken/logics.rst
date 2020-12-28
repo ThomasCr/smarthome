@@ -8,9 +8,9 @@
 .. role:: blacksup
 
 
-##########################
-Logiken :greensup:`Update`
-##########################
+#######
+Logiken
+#######
 
 Logiken für SmartHomeNG sind Python Skripte. Zur Erstellung von Logiken müssen Sie über
 Kenntnisse der Programmiersprache Python verfügen.

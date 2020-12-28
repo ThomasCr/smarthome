@@ -11,7 +11,7 @@ New Plugins
 ^^^^^^^^^^^
 
 -  DWD Plugin: fetch weather warnings and forecasts from Deutscher Wetterdienst (DWD).
--  :doc:`Mail Plugin </plugins/mail/README>`: sending (SMTP) and receiving (IMAP) mail.
+-  `Mail Plugin </plugins/mail/README>`: sending (SMTP) and receiving (IMAP) mail.
 -  :doc:`RRD Plugin </plugins/rrd/README>`: build round robin databases.
 -  :doc:`Russound Plugin </plugins/russound/README>`: control a Russound audio device with RIO over TCP.
 -  :doc:`Snom Plugin </plugins/snom/README>`: to handle snom VOIP phones.

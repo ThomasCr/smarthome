@@ -56,6 +56,7 @@ vorgenommen werden sind:
 - Rechnername z.B. **sh**, **shmuc**, **smarthome23**, ...
 - Das **root Passwort bitte leer lassen**
 - Benutzer **smarthome** anlegen
+  (bitte gerade am Raspi ein Passwort vergeben, sonst wird SSH für den user nicht aktiviert)
 - Zeitzone (z.B. Berlin)
 - Festplatte geführt partitionieren und alles verwenden,
   Änderungen auf Platten schreiben

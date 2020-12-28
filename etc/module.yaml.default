@@ -1,10 +1,12 @@
 %YAML 1.1
 ---
 # etc/module.yaml
+# support for web server
 http:
     module_name: http
     starturl: admin
 
+# support for graphical admin interface
 admin:
     module_name: admin
 

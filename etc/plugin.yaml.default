@@ -7,17 +7,24 @@ database:
     -   database:./var/db/smarthomeng.db
     -   check_same_thread:0
 
-#database_mysql:
-#   plugin_name: database
-#   instance: nas
-#   precision: 4
-#   driver: pymysql
-#   connect:
-#     - host:localhost
-#     - user:smarthome
-#     - passwd:smarthome
-#     - db:smarthome
-#     - port:3306
+knx:
+    plugin_name: knx
+    plugin_enabled: False
+    host: 127.0.0.1
+    port: 6720
+    send_time: 600    # update date/time every 600 seconds, default none
+    time_ga: 6/0/0    # default none
+    date_ga: 6/0/1    # default none
+    busmonitor: True  # log all knx messages, default false
+    readonly: True    ## don't write to knx bus, default false"
+
+cli:
+    plugin_name: cli
+    plugin_enabled: False
+    ip: 0.0.0.0
+    #port: 2323
+    update: True
+    #hashed_password: 1245a9633edf47b7091f37c4d294b5be5a9936c81c5359b16d1c48337$
 
 # Bereitstellung eines Websockets zur Kommunikation zwischen SmartVISU und SmartHomeNG
 websocket:
@@ -28,22 +35,17 @@ websocket:
     #wsproto: 4
     #acl: rw
 
-#knx:
-#     plugin_name: knx
-#     host: 127.0.0.1
-#     port: 6720
-#     send_time: 600    # update date/time every 600 seconds, default none
-#     time_ga: 6/0/0    # default none
-#     date_ga: 6/0/1    # default none
-#     busmonitor: True  # log all knx messages, default false
-#     readonly: True    ## don't write to knx bus, default false"
-
-#cli:
-#    plugin_name: cli
-#    ip: 0.0.0.0
-#    #port: 2323
-#    update: True
-#    #hashed_password: 1245a9633edf47b7091f37c4d294b5be5a9936c81c5359b16d1c48337$
+#database_mysql:
+#    plugin_name: database
+#    instance: nas
+#    precision: 4
+#    driver: pymysql
+#    connect:
+#      - host:localhost
+#      - user:smarthome
+#      - passwd:smarthome
+#      - db:smarthome
+#      - port:3306
 
 # memlog:
 #     plugin_name: memlog

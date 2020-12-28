@@ -50,6 +50,10 @@ Es gibt folgende allgemeine Parameter im Abschnitt eines Plugins:
 |                | im **../plugins** Verzeichnis). Statt des Parameters **plugin_name** konnten bisher |
 |                | auch die Parameter **class_name** und **class_path** angegeben werden.              |
 +----------------+-------------------------------------------------------------------------------------+
+| plugin_enabled | Wenn dieser Parameter auf **False** gesetzt wird, wird das Plugin nicht geladen, die|
+|                | Konfiguration bleibt jedoch erhalten und die Verwendung von Item-Attributen dieses  |
+|                | Plugins in den Item Konfigurationen erzeugt keine Warnungen im Log.                 |
++----------------+-------------------------------------------------------------------------------------+
 | class_name     | **DEPRECATED**: Name der Klasse in der Plugin Datei. Was hier einzutragen ist,      |
 |                | steht in der Dokumentation zum jeweiligen Plugin. Stattdessen ist die               |
 |                | Konfiguration über den Parameter **plugin_name** vorzunehmen.                       |

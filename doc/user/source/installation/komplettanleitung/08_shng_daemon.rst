@@ -41,11 +41,19 @@ und folgenden Text hineinkopieren:
    WorkingDirectory=/usr/local/smarthome
    User=smarthome
    PIDFile=/usr/local/smarthome/var/run/smarthome.pid
-   Restart=on-abort
+   Restart=on-failure
    TimeoutStartSec=900
+   RestartForceExitStatus=5
 
    [Install]
    WantedBy=default.target
+
+.. attention::
+
+   Die Angabe **RestartForceExitStatus=5** ist notwendig, damit der automatische Restart bei der Nachinstallation
+   von Python Packages und der durch die AdminGUI ausgelöste Neustart auch für ein als Service laufendes SmartHomeNG
+   funktionieren.
+
 
 Der so vorbereitete Dienst kann über den **systemctl** Befehl gestartet
 werden.
